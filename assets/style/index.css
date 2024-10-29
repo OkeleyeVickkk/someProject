@@ -7,14 +7,6 @@
 	font-size: 1.15rem;
 	opacity: 0.8;
 }
-/* .v-289fh29b {
-	transition: 300ms ease-in-out;
-}
-.v-289fh29b.active {
-	background-color: var(--primary-clr);
-	color: var(--white);
-} */
-
 .v-text-content .v-action-container .v-link-out {
 	padding: 0.8rem 2rem;
 	border: 1px solid var(--primary-clr);

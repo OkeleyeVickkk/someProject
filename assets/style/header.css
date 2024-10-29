@@ -94,7 +94,7 @@
 .v-header .v-subheader:not(.active) .v-toggle-lg-screen-auth-dropdown .v-toggler:hover {
 	--new-r: calc(var(--r) - 4%);
 	padding-top: calc(var(--pad) + 20px);
-	padding-bottom: calc(var(--pad) + 2px);
+	padding-bottom: calc(var(--pad) + 1px);
 	border-end-end-radius: var(--new-r);
 	border-end-start-radius: var(--new-r);
 }
