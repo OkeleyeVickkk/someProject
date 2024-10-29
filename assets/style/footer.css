@@ -37,6 +37,9 @@
 	color: var(--white);
 	transition: 300ms ease-in-out;
 }
+.v-social-links [href] svg {
+	--size: 1.25rem;
+}
 .v-footer-item .v-footer-links {
 	display: flex;
 	flex-direction: column;
@@ -52,9 +55,9 @@
 .v-footer-item .v-footer-links .v-link::before {
 	content: "";
 	background-color: rgba(var(--white-variant), 0.5);
-	width: 4px;
+	width: 5px;
 	transition: 300ms ease-in-out;
-	height: 4px;
+	height: 5px;
 	border-radius: 50%;
 	position: absolute;
 	display: block;
@@ -65,7 +68,9 @@
 .v-footer-item .v-footer-links .v-link:hover::before {
 	background-color: var(--primary-clr);
 }
-
 .v-footer-item .v-footer-links .v-link:hover {
 	color: rgba(var(--white-variant), 1);
+}
+.v-footer-item textarea {
+	resize: none;
 }
