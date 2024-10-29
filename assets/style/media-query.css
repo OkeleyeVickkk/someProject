@@ -24,6 +24,9 @@
 }
 
 @media all and (min-width: 991px) {
+	.v-text-content .v-hero-title {
+		font-size: 3.5rem;
+	}
 }
 
 @media all and (min-width: 1024px) {

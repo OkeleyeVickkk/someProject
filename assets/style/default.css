@@ -28,69 +28,11 @@
 	--white-variant: 255, 255, 255;
 	--white: rgba(var(--white-variant), 1);
 
-	--primary-clr-variant: 78, 186, 123;
+	--primary-clr-variant: 230, 0, 0;
 	--primary-clr: rgba(var(--primary-clr-variant), 1);
 	--primary-clr-dark: rgb(35, 84, 56);
 
 	/* themes */
-	--hero-bg-gradient: linear-gradient(to bottom, rgba(218, 255, 230), rgba(241, 245, 255) 90%);
-	--page-bg-variant: rgba(250, 250, 250, 1); /* Add a default value */
-	--section-bg-1: 221, 241, 233;
-	--section-bg-2: 250, 255, 252;
-	--main-text-clr: rgba(23, 39, 31, 1);
-	--subtext-clr: rgba(89, 124, 103, 1);
-	--logo-theme: var(--dark);
-	--icon-theme: var(--primary-clr);
-	--border-clr: rgba(var(--dark-variant), 0.12);
-	--nav-link-action: linear-gradient(180deg, #4eba7b 0%, #235438 100%);
-	--icon-bg: var(--main-text-clr);
-	--icon-clr: rgba(236, 253, 243, 1);
-	--bs: rgb(125 167 143 / 36%) 3px 3px 6px 0px inset, rgb(173 200 185 / 47%) -3px -3px 6px 1px inset;
-	--bg-1: rgba(250, 255, 252);
-	--bg-2: rgba(221, 241, 233);
-	--social-icon-link-bg: rgba(89, 124, 103, 1);
-	--social-icon-link-clr: rgba(113, 138, 123, 1);
-}
-@media (prefers-color-scheme: light) {
-	:root {
-		/* Light theme overrides */
-		--hero-bg-gradient: linear-gradient(to bottom, rgba(218, 255, 230), rgba(241, 245, 255) 90%);
-		--page-bg-variant: rgba(255, 255, 255, 1); /* Example light background color */
-		--section-bg-1: 221, 241, 233;
-		--section-bg-2: 250, 255, 252;
-		--main-text-clr: rgba(23, 39, 31, 1);
-		--subtext-clr: rgba(89, 124, 103, 1);
-		--logo-theme: var(--dark);
-		--icon-theme: var(--primary-clr);
-		--border-clr: rgba(var(--dark-variant), 0.12);
-		--nav-link-action: linear-gradient(180deg, #4eba7b 0%, #235438 100%);
-		--icon-bg: var(--main-text-clr);
-		--icon-clr: rgba(236, 253, 243, 1);
-		--bs: rgb(125 167 143 / 36%) 3px 3px 6px 0px inset, rgb(173 200 185 / 47%) -3px -3px 6px 1px inset;
-		--bg-1: rgba(250, 255, 252);
-		--bg-2: rgba(221, 241, 233);
-		--social-icon-link-bg: rgba(89, 124, 103, 1);
-		--social-icon-link-clr: rgba(113, 138, 123, 1);
-	}
-}
-
-@media (prefers-color-scheme: dark) {
-	body.dark-theme {
-		--social-icon-link-bg: rgba(113, 138, 123, 1);
-		--social-icon-link-clr: rgba(89, 124, 103, 1);
-		--bg-1: rgba(16, 19, 18);
-		--bg-2: rgba(22, 27, 25);
-		--bs: rgb(6 46 23) 3px 3px 6px 0px inset, rgb(23 73 44 / 50%) -3px -3px 6px 1px inset;
-		--main-text-clr: rgba(236, 253, 243, 1);
-		--page-bg-variant: 9, 71, 17;
-		--section-bg-1: 16, 19, 18;
-		--section-bg-2: 22, 25, 27;
-		--subtext-clr: rgba(113, 138, 123, 1);
-		--icon-theme: var(--primary-clr-dark);
-		--logo-theme: var(--white);
-		--border-clr: rgba(var(--primary-clr-variant), 0.2);
-		--nav-link-action: linear-gradient(180deg, #4eba7b 0%, var(--primary-clr-dark) 100%);
-	}
 }
 
 *,
