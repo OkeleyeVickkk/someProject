@@ -1,4 +1,4 @@
-import { X, V } from "./icons.js";
+import { X, V, countries, EYESLASH, EYE } from "./helpers.js";
 
 // const elem = document.querySelector(".v-mouse-ele");
 
@@ -39,8 +39,47 @@ import { X, V } from "./icons.js";
 		});
 	};
 
+	function initCountriesOptions() {
+		if (!countries || !countries.length) return;
+		const countriesFormInputs = document.querySelectorAll(".v-country-custom-select");
+		if (!countriesFormInputs.length) return;
+		countriesFormInputs.forEach((countryContainer) => {
+			let countrySelectWrapper = countryContainer.querySelector("select");
+			if (!countrySelectWrapper) return;
+			const firstChild = `<option value="" disabled selected>Select country</option>`;
+			countrySelectWrapper.innerHTML = firstChild;
+			for (const country of countries) {
+				const newOption = `<option value="${country.nationality}">${country.nationality}</option>`;
+				countrySelectWrapper.innerHTML += newOption;
+			}
+		});
+	}
+
+	const initPasswordToggler = () => {
+		const allPasswordToggler = document.querySelectorAll("[data-v-toggler]");
+		if (!allPasswordToggler || !allPasswordToggler.length) return;
+		allPasswordToggler.forEach((toggler) => {
+			toggler.addEventListener("click", function () {
+				const target = this;
+				const attr = target.getAttribute("data-v-toggler");
+				if (!attr) return alert("what you just clicked rn, doesn't have a target input");
+				const correspondInput = document.querySelector(`[data-v-receiver=${attr}]`);
+				if (!correspondInput) return alert("Na wa o");
+				if (correspondInput.type.toLowerCase() === "password") {
+					correspondInput.type = "text";
+					target.innerHTML = EYESLASH;
+				} else {
+					correspondInput.type = "password";
+					target.innerHTML = EYE;
+				}
+			});
+		});
+	};
+
 	function init() {
 		initSubHeader();
+		initCountriesOptions();
+		initPasswordToggler();
 	}
 	window.addEventListener("DOMContentLoaded", init);
 })();

@@ -115,3 +115,122 @@
 .v-header .v-subheader .v-subheader-link svg {
 	--size: 1.2rem;
 }
+
+.v-mobile-menu-toggler-container {
+	margin-right: 2.5rem;
+}
+.v-mobile-menu-toggler-container .v-mobile-menu-toggler {
+	display: flex;
+	border-radius: 50%;
+	align-items: center;
+	justify-content: center;
+	transition: 300ms ease-in-out;
+	background-color: transparent;
+	color: var(--dark);
+	padding: 7px;
+}
+.v-mobile-menu-toggler-container .v-mobile-menu-toggler svg {
+	--size: 1.5rem;
+}
+.v-mobile-menu-toggler-container .v-mobile-menu-toggler:hover {
+	color: var(--white);
+	background-color: var(--primary-clr);
+}
+
+/* for auth */
+.v-auth-container {
+	min-height: 100vh;
+	min-height: 100dvh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.v-auth-container .v-image {
+	width: 5rem;
+	margin-bottom: 1rem;
+}
+.v-auth-container .v-auth-header {
+	padding-bottom: 1.8rem;
+	border-bottom: 1.5px solid #ddd;
+	margin-bottom: 1.8rem;
+	display: flex;
+	flex-direction: column;
+	row-gap: 5px;
+}
+.v-auth-container .v-auth-header .v-subtext {
+	opacity: 0.8;
+	font-size: 1.05rem;
+}
+.v-auth-container .v-form {
+	display: flex;
+	flex-direction: column;
+	row-gap: 1rem;
+}
+.v-auth-container .v-form .form-control {
+	min-height: 3rem;
+	font-size: 1.09rem;
+}
+.v-auth-container .v-form .form-control::placeholder {
+	letter-spacing: -0.2px;
+	color: var(--form-control-text-clr);
+	opacity: 0.6;
+}
+.v-auth-container .v-form .form-control:focus {
+	border-color: var(--primary-clr);
+}
+.v-auth-container .v-form .v-label {
+	opacity: 0.9;
+}
+.v-auth-container .v-form .v-as-label {
+	color: var(--primary-clr);
+	text-decoration: 1.5px underline var(--primary-clr);
+}
+.v-auth-container .v-form .v-form-input-inner {
+	position: relative;
+	margin-top: 2px;
+}
+.v-auth-container .v-form-input-inner:has(.v-password-toggler) .form-control {
+	padding-right: 2rem;
+}
+.v-auth-container .v-form .v-form-input-inner .v-password-toggler {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+	transition: 300ms ease-in-out;
+	background-color: transparent;
+}
+.v-auth-container .v-form-input-inner .v-password-toggler svg {
+	--size: 1.5rem;
+	color: var(--form-control-text-clr);
+}
+.v-auth-container .v-form-input-inner .v-password-toggler:hover {
+	background-color: #ddd3;
+}
+.v-auth-container .v-action-container {
+	margin-top: 1rem;
+}
+.v-auth-container .v-action-container .v-action-btn {
+	background-color: var(--primary-clr);
+	color: var(--white);
+	padding: 0.8rem 1rem;
+	width: 100%;
+	border-radius: 5px;
+}
+.v-auth-container .v-post-inputs {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 1rem;
+}
+.v-auth-container .v-post-inputs .v-subtext,
+.v-auth-container .v-post-inputs .v-subtext [href] {
+	font-size: 0.99rem;
+}
+.v-auth-container .v-post-inputs .v-subtext [href] {
+	color: var(--primary-clr);
+}

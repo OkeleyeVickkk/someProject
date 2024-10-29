@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="shortcut icon" href="./assets/media/logos/naijatestcrowd-favicon.png" type="image/x-icon" />
+		<link rel="apple-touch-icon" sizes="180x180" href="./assets/media/logos/naijatestcrowd-favicon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="./assets/media/logos/naijatestcrowd-favicon.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="./assets/media/logos/naijatestcrowd-favicon.png" />
+
+		<link rel="stylesheet" type="text/css" href="./assets/style/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="./assets/style/default.css" />
+		<link rel="stylesheet" type="text/css" href="./assets/style/header.css" />
+		<link rel="stylesheet" type="text/css" href="./assets/style/index.css" />
+		<link rel="stylesheet" type="text/css" href="./assets/style/footer.css" />
+		<link rel="stylesheet" type="text/css" href="./assets/style/media-query.css" />
+		<title>Register</title>
+	</head>
+	<body>
+		<div class="v-auth-container">
+			<div class="px-2 py-5 col-12 col-sm-8 col-md-7 col-lg-6 col-xl-4 mx-auto">
+				<figure class="v-image">
+					<img src="./assets/media/logos/naijatestcrowd-logo.png" alt="" class="img-fluid" />
+				</figure>
+				<header class="v-auth-header">
+					<h3 class="v-title">Register</h3>
+					<span class="v-subtext">Welcome - Create an account</span>
+				</header>
+				<form action="" class="v-form row-gap-2">
+					<div class="v-form-input">
+						<label for="fullname" class="v-label">Name</label>
+						<div class="v-form-input-inner">
+							<input type="text" id="fullname" class="form-control" placeholder="Enter fullname" required />
+						</div>
+					</div>
+					<div class="v-form-input">
+						<label for="email" class="v-label">Email</label>
+						<div class="v-form-input-inner">
+							<input type="email" id="email" class="form-control" placeholder="Enter your email address" required />
+						</div>
+					</div>
+					<div class="v-form-input">
+						<label for="phone" class="v-label">Phone</label>
+						<div class="v-form-input-inner">
+							<input type="tel" id="phone" inputmode="numeric" class="form-control" placeholder="Enter your phone number" />
+						</div>
+					</div>
+					<div class="v-form-input">
+						<label for="p-gender" class="v-label">Gender</label>
+						<div class="position-relative">
+							<select class="form-control" id="p-gender" required>
+								<option value="" disabled selected>Select your gender</option>
+								<option value="male">Male</option>
+								<option value="female">Female</option>
+							</select>
+						</div>
+					</div>
+					<div class="v-form-input v-country-custom-select">
+						<label for="p-country" class="v-label">Country</label>
+						<select class="form-control" id="p-country" required></select>
+					</div>
+					<div class="v-form-input">
+						<div class="d-flex align-items-center justify-content-between">
+							<label for="password" class="v-label">Password</label>
+						</div>
+						<div class="v-form-input-inner">
+							<input type="password" class="form-control" placeholder="Enter a strong password" id="password" data-v-receiver="password" required />
+							<button type="button" data-v-toggler="password" class="v-password-toggler">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+									<rect width="24" height="24" fill="none" />
+									<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+										<path
+											d="M2.036 12.322a1 1 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178c.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178" />
+										<path d="M15 12a3 3 0 1 1-6 0a3 3 0 0 1 6 0" />
+									</g>
+								</svg>
+							</button>
+						</div>
+					</div>
+					<div class="v-form-input">
+						<div class="d-flex align-items-center justify-content-between">
+							<label for="confirm-password" class="v-label">Confirm Password</label>
+						</div>
+						<div class="v-form-input-inner">
+							<input
+								type="password"
+								class="form-control"
+								placeholder="Re-enter password"
+								id="confirm-password"
+								data-v-receiver="confirm-password"
+								required />
+							<button type="button" data-v-toggler="confirm-password" class="v-password-toggler">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+									<rect width="24" height="24" fill="none" />
+									<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+										<path
+											d="M2.036 12.322a1 1 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178c.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178" />
+										<path d="M15 12a3 3 0 1 1-6 0a3 3 0 0 1 6 0" />
+									</g>
+								</svg>
+							</button>
+						</div>
+					</div>
+					<div class="v-action-container">
+						<button type="button" class="v-action-btn">Create Account</button>
+					</div>
+					<div class="v-post-inputs">
+						<span class="v-subtext">
+							Already have an account?
+							<a href="./register.html">Sign in</a>
+						</span>
+						<span class="v-subtext opacity-75"> Copyright &copy; Naija Test Crowd 2022. </span>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<script type="module" src="./assets/js/index.custom.js" defer></script>
+	</body>
+</html>
