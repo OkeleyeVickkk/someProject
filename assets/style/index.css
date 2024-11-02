@@ -1,7 +1,49 @@
+.v-hero.has-bg-image {
+	height: 450px;
+	position: relative;
+	overflow: hidden;
+}
+.v-hero.has-bg-image .v-bg-presentation {
+	position: absolute;
+	overflow: hidden;
+	inset: 0;
+}
+.v-hero.has-bg-image .v-hero-page-content {
+	height: 100%;
+	display: grid;
+	place-content: center;
+}
+.v-hero.has-bg-image .v-bg-presentation::before {
+	content: "";
+	background-color: rgba(var(--dark-variant), 50%);
+	backdrop-filter: blur(2px);
+	position: absolute;
+	inset: 0;
+}
+.v-hero.has-bg-image .v-bg-presentation .img-fluid {
+	height: 100%;
+	width: 100%;
+	object-position: center;
+	-o-object-position: center;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
 .v-text-content .v-hero-title {
 	font-size: 2.35rem;
 	position: relative;
+}
+.v-text-content:not(.index) .v-hero-title {
 	transition: 300ms ease-in-out;
+	color: unset;
+	background-color: transparent;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-image: linear-gradient(to right bottom, #fff 30%, hsla(0, 0%, 100%, 0.5));
+	-webkit-text-stroke: 0.4px #ffffff80;
+	-webkit-text-fill-color: transparent;
+	text-shadow: -1px -1px 0 hsla(0, 0%, 100%, 0.2), 1px 1px 0 rgba(0, 0, 0, 0.1);
+	word-wrap: break-word;
 }
 .v-text-content .v-subtext {
 	font-size: 1.15rem;
@@ -200,9 +242,11 @@
 	gap: 1rem;
 	flex-wrap: nowrap;
 	overflow-x: auto;
+	scroll-snap-type: x mandatory;
 }
 .v-list-container .v-each-list-item {
 	min-width: 180px;
+	scroll-snap-align: start;
 }
 .v-list-container .v-item {
 	color: var(--dark);
@@ -233,7 +277,7 @@
 	text-overflow: ellipsis;
 	overflow: hidden;
 	line-height: 1.25;
-	font-size: 0.95rem;
+	font-size: 0.9rem;
 	opacity: 0.8;
 }
 .v-others .v-form .v-form-input {

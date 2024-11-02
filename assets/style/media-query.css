@@ -18,6 +18,9 @@
 }
 
 @media all and (min-width: 768px) {
+	.v-hero.has-bg-image {
+		height: 600px;
+	}
 }
 
 @media all and (min-width: 800px) {
